@@ -112,7 +112,7 @@ async function generateSvg() {
   <rect width="${width}" height="${height}" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
 
   <!-- Header -->
-  <text x="24" y="32" fill="#c9d1d9" font-size="14" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Contribution & Activity History (Last 60 Days)</text>
+  <text x="24" y="32" fill="#c9d1d9" font-size="14" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Contribution &amp; Activity History (Last 60 Days)</text>
   <text x="${width - 24}" y="32" fill="#58a6ff" font-size="13" font-weight="600" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">${totalContributions.toLocaleString()} Total Contributions</text>
 
   <!-- Grid -->
