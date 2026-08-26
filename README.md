@@ -105,6 +105,6 @@
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=UGilfoyle&theme=react-dark&hide_border=true&area=true&color=61dafb" width="95%" alt="Contribution Graph" />
+<img src="https://raw.githubusercontent.com/UGilfoyle/UGilfoyle/main/assets/activity.svg" width="95%" alt="Contribution & Activity History" />
 
 </div>
