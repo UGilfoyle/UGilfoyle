@@ -1,7 +1,7 @@
 <div align="center">
 
 # Akash Kaintura
-### Full-Stack & Systems Engineer • Open Source Contributor
+### Full-Stack & Systems Engineer &bull; Open Source Contributor
 
 <p align="center">
   <a href="https://linkedin.com/in/akashkaintura">
@@ -32,7 +32,7 @@
 
 ### Open Source Contributions
 
-#### 🌐 [Plane](https://github.com/makeplane/plane) — Open Source Project Management Platform
+#### <img src="https://api.iconify.design/lucide/git-pull-request.svg?color=%2358a6ff" width="18" height="18" align="center" /> [Plane](https://github.com/makeplane/plane) — Open Source Project Management Platform
 *Contributor to core editor (`@plane/editor`) and utility infrastructure (`@plane/utils`).*
 
 - **Editor AST Tokenization & Highlighting**: Re-engineered Lowlight syntax tree processing (`parseNodes`) from shallow flattening to recursive leaf-node extraction, eliminating `TypeError` decoration crashes on multi-line scripts. Added native syntax support and alias mappings (`ps`, `ps1`) for PowerShell.
@@ -43,12 +43,12 @@
   - Corrected IPv6 hostname extraction in `extractHostname` and timestamp parsing in `calculateTimeAgo` to prevent unhandled `RangeError` exceptions in React views.
 - **Testing**: Added automated unit test suites for editor extensions and utilities with 0 OxLint warnings and strict TypeScript compliance.
 
-#### 🎥 [Meet](https://github.com/suitenumerique/meet) — Open Source Video Conferencing
+#### <img src="https://api.iconify.design/lucide/video.svg?color=%233fb950" width="18" height="18" align="center" /> [Meet](https://github.com/suitenumerique/meet) — Open Source Video Conferencing
 *WebRTC video collaboration platform powered by LiveKit.*
 
 - Worked on real-time room state management, media track handling, and participant synchronization for low-latency video and audio streaming.
 
-#### 🛠️ [OpenSRE](https://github.com/Tracer-Cloud/opensre) — Open Source AI SRE Toolkit
+#### <img src="https://api.iconify.design/lucide/cpu.svg?color=%23d29922" width="18" height="18" align="center" /> [OpenSRE](https://github.com/Tracer-Cloud/opensre) — Open Source AI SRE Toolkit
 *AI-driven SRE toolkit for autonomous cloud operations and incident triage.*
 
 - Contributed to telemetry aggregation pipelines, automated root-cause analysis workflows, and cloud diagnostics integrations.
@@ -57,29 +57,29 @@
 
 ### Featured Projects
 
-#### 🎯 [CareerOps](https://github.com/UGilfoyle/career-ops)
+#### <img src="https://api.iconify.design/lucide/briefcase.svg?color=%23bc8cff" width="18" height="18" align="center" /> [CareerOps](https://github.com/UGilfoyle/career-ops)
 *Automated career command center and ATS tailoring pipeline.*
 
 - Headless job portal scanning and lifecycle application tracking built with Playwright and PostgreSQL.
 - Resume customization engine integrating Google Gemini AI and HuggingFace inference for semantic job description alignment.
 - Snapshot and document storage pipeline on AWS S3 with automated data normalization.
 
-#### 🖌️ [Collab Whiteboard](https://github.com/UGilfoyle/collab-whiteboard)
+#### <img src="https://api.iconify.design/lucide/layout.svg?color=%2358a6ff" width="18" height="18" align="center" /> [Collab Whiteboard](https://github.com/UGilfoyle/collab-whiteboard)
 *Real-time collaborative canvas (Miro alternative).*
 
 - Multi-user real-time drawing and object synchronization built on Bun, Fabric.js, WebSockets, and PostgreSQL.
 
-#### 🛡️ [API Contract Guardian](https://github.com/UGilfoyle/api-contract-guardian)
+#### <img src="https://api.iconify.design/lucide/shield-check.svg?color=%233fb950" width="18" height="18" align="center" /> [API Contract Guardian](https://github.com/UGilfoyle/api-contract-guardian)
 *AI-assisted OpenAPI compatibility and release risk analyzer.*
 
 - Automated breaking change detection and schema compatibility evaluation across API versions.
 
-#### 📈 [KitePlus Companion](https://github.com/UGilfoyle/kite-plus-alternative)
+#### <img src="https://api.iconify.design/lucide/trending-up.svg?color=%23f0883e" width="18" height="18" align="center" /> [KitePlus Companion](https://github.com/UGilfoyle/kite-plus-alternative)
 *Client-side trading companion for Zerodha Kite.*
 
 - 100% local, zero-latency Chrome extension with dual-axis intraday MTM charts, position grouping, and option chain basket execution.
 
-#### 📱 [Rugged Todo](https://github.com/UGilfoyle/rugged-todo)
+#### <img src="https://api.iconify.design/lucide/database.svg?color=%2379c0ff" width="18" height="18" align="center" /> [Rugged Todo](https://github.com/UGilfoyle/rugged-todo)
 *Offline-first task management PWA / Android app.*
 
 - Local-first embedded SQL database using SQLite WASM, designed for low-connectivity environments.
