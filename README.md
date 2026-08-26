@@ -1,118 +1,57 @@
-<div align="center">
+# Akash Kaintura
 
-# Hi there, I'm Akash Kaintura 👋
-### Full-Stack & Systems Engineer • Open Source Contributor • Real-Time Systems Builder
+Software Engineer specializing in full-stack web architecture, real-time collaborative systems, and developer tooling. Core open-source contributor to [Plane](https://github.com/makeplane/plane).
 
-[![GitHub followers](https://img.shields.io/github/followers/UGilfoyle?label=Follow&style=for-the-badge&color=238636)](https://github.com/UGilfoyle)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/akashkaintura)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail)](mailto:akashkaintura.ak@gmail.com)
-
-<br/>
-
-```typescript
-const engineer = {
-  name: "Akash Kaintura",
-  handle: "@UGilfoyle",
-  role: "Full-Stack & Systems Engineer",
-  specialization: ["Real-Time Collaboration (CRDTs)", "High-Performance Web & ASTs", "Agentic Systems"],
-  coreStack: ["TypeScript", "React", "Node.js", "ProseMirror/TipTap", "Yjs", "PostgreSQL", "Python"],
-  status: "Shipping resilient, test-driven open source software 🚀",
-};
-```
-
-</div>
+[LinkedIn](https://linkedin.com/in/akashkaintura) &bull; [Email](mailto:akashkaintura.ak@gmail.com)
 
 ---
 
-## ⚡ What I Do & Technical Focus
+## Core Focus Areas
 
-- 🛠️ **Real-Time Collaborative Systems**: Deep experience with ProseMirror, TipTap, and Yjs CRDT architecture for zero-conflict multi-user editing.
-- ⚡ **High-Performance Web & ASTs**: Parsing, transforming, and decorating deeply nested Abstract Syntax Trees (HAST/MDAST) with sub-millisecond execution.
-- 🤖 **Agentic AI & Automation Engines**: Building autonomous scraping, evaluation, and publishing pipelines (Playwright, Gemini AI, PostgreSQL, AWS).
-- 📈 **Browser Engineering & FinTech**: Crafting zero-latency, 100% local Chrome Extensions for financial market tracking and high-frequency UI rendering.
-
----
-
-## 🚀 Key Open-Source Contributions & Projects
-
-### 1. 🌐 [Plane](https://github.com/makeplane/plane) — Open Source Project Management Platform
-> *Active core contributor focusing on `@plane/editor`, `@plane/utils`, and collaborative text editing.*
-
-- **AST Tokenizer & Syntax Highlighting Engine**:
-  - Re-architected Lowlight AST traversal (`parseNodes`) from shallow flattening to recursive leaf-node extraction, eliminating deep tokenization crashes on multi-line scripts.
-  - Implemented multi-language syntax grammars (PowerShell, TypeScript, Python, Bash) in collaborative TipTap editor blocks.
-  - Engineered transaction detection in `LowlightPlugin.apply` to guarantee real-time decoration re-computation across Yjs collaborative peer syncs.
-- **Resilient Utility Layer (`@plane/utils`)**:
-  - **Security**: Added injection protection options (`hasInjectionRiskChars` / `validatePersonName`) balancing security with valid multi-cultural naming conventions.
-  - **Fault-Tolerant Sorting**: Fixed nested property path traversal in `orderArrayBy` preventing null-pointer exceptions on deeply nested objects.
-  - **Network & DateTime Safety**: Built IPv6 address parsing in `extractHostname` and safe date-parsing pipelines in `calculateTimeAgo` preventing runtime `RangeError` crashes.
-  - **100% Test-Driven Quality**: Added automated unit test suites with 0 OxLint warnings and complete type safety across monorepo builds.
+- **Real-Time Collaboration**: Conflict-free document editing architectures using ProseMirror, TipTap, and Yjs CRDTs.
+- **AST Engineering & Editors**: High-performance Abstract Syntax Tree manipulation, custom tokenizers, and presentation-layer decorations.
+- **Client-Side Systems & Extensions**: Low-latency browser extensions (Manifest V3) and client-heavy architectures.
+- **Automation Pipelines**: Headless browser automation (Playwright), document extraction, and LLM integrations.
 
 ---
 
-### 2. 🎯 [CareerOps](https://github.com/UGilfoyle/career-ops) — Job Search Command Center & ATS Engine
-> *An automated, AI-augmented career operations pipeline.*
+## Open Source & Notable Work
 
-- **Automated Pipeline**: Built headless portal scanning and application tracking using **Playwright** and **PostgreSQL**.
-- **LLM Resume Tailoring**: Integrated **Google Gemini AI** and **HuggingFace Inference** for semantic job-description alignment and automated PDF generation.
-- **Cloud & Data Pipelines**: Managed document storage and snapshots with **AWS S3** and automated database deduplication.
+### [Plane](https://github.com/makeplane/plane) — Open Source Project Management Platform
+*Active contributor to `@plane/editor` and `@plane/utils`.*
 
----
+- **Editor Syntax Tokenizer**: Re-architected Lowlight AST tokenization (`parseNodes`) to recursively extract leaf text nodes, resolving decoration crashes on multi-line scripts. Added language support for PowerShell and registered aliases (`ps`, `ps1`).
+- **Collaborative Sync**: Enhanced `LowlightPlugin.apply` transaction detection to ensure syntax decorations recompute deterministically across Yjs remote collaborative syncs.
+- **Utility Security & Reliability**: 
+  - Added configurable injection protection (`hasInjectionRiskChars`) to support apostrophes in global naming conventions without compromising security.
+  - Resolved nested traversal crashes in `orderArrayBy` and updated sorting to use immutable `.toSorted()` semantics.
+  - Fixed hostname extraction for IPv6 addresses (`extractHostname`) and timestamp parsing in `calculateTimeAgo` to eliminate runtime `RangeError` exceptions.
+- **Test Infrastructure**: Introduced automated unit test suites for editor extensions and utility functions, maintaining 0 OxLint warnings and strict type compliance.
 
-### 3. 📈 [KitePlus Companion](https://github.com/UGilfoyle/kite-plus-alternative) — FinTech Browser Extension
-> *A lightweight, client-side companion for Zerodha Kite.*
+### [CareerOps](https://github.com/UGilfoyle/career-ops) — Job Search Command Center
+*Automated recruitment tracking and ATS evaluation pipeline.*
 
-- **Real-Time Intraday MTM Charting**: Injects a custom dual-axis canvas chart into live trading pages tracking Net P&L every 10s.
-- **100% Local Privacy**: Runs entirely client-side with zero external API calls or tracking, interacting directly with active session endpoints.
-- **Advanced Execution Engine**: Features position grouping by expiry/underlying and multi-leg option basket builder.
+- Built automated portal discovery and application tracking using Playwright and PostgreSQL.
+- Implemented resume tailoring workflows integrating Google Gemini AI and HuggingFace inference.
+- Structured document versioning and asset storage with AWS S3.
 
----
+### [KitePlus Companion](https://github.com/UGilfoyle/kite-plus-alternative) — FinTech Browser Extension
+*Client-side companion extension for Zerodha Kite.*
 
-### 4. 🤖 [LinkedIn Automation Engine](https://github.com/UGilfoyle/linkedin-automation)
-> *Autonomous system design infographic generator and content delivery pipeline.*
+- Injected dual-axis real-time MTM performance charts into live trading views.
+- Implemented position grouping and multi-leg option basket execution with zero external server dependencies.
 
-- **Automated Infographics**: Headless HTML/CSS-to-image render engine producing production-grade architecture diagrams.
-- **Scheduled Publishing**: API integration for programmatic publishing and engagement management.
+### [LinkedIn Automation Engine](https://github.com/UGilfoyle/linkedin-automation)
+*System design visualization and automated publishing engine.*
 
----
-
-## 🛠️ Tech Stack & Tooling
-
-<div align="center">
-
-| Domain | Technologies |
-| :--- | :--- |
-| **Languages** | `TypeScript` • `JavaScript (ESNext)` • `Python` • `SQL` • `HTML5 / CSS3` • `Bash` |
-| **Frontend & UI** | `React 19` • `Next.js` • `TailwindCSS` • `TipTap / ProseMirror` • `Vite` |
-| **Real-Time & State** | `Yjs (CRDT)` • `y-prosemirror` • `WebSockets` • `Hocuspocus` |
-| **Backend & Databases** | `Node.js` • `Express` • `PostgreSQL` • `Redis` • `AWS S3` |
-| **Testing & Quality** | `Vitest` • `Playwright` • `OxLint` • `Oxfmt` • `Turborepo` • `Husky` |
-
-</div>
+- Automated headless HTML/CSS rendering pipeline for generating system architecture diagrams.
+- Programmatic API scheduling and engagement workflow.
 
 ---
 
-## 📊 GitHub Analytics
+## Technical Stack
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=UGilfoyle&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Akash's GitHub Stats" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=UGilfoyle&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=UGilfoyle&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
-
-</div>
-
----
-
-<div align="center">
-
-### 🤝 Let's Connect & Collaborate!
-
-*Always open to collaborating on high-performance open-source projects, real-time web infrastructure, and innovative systems engineering.*
-
-📫 **Reach out at**: [akashkaintura.ak@gmail.com](mailto:akashkaintura.ak@gmail.com) • [LinkedIn](https://linkedin.com/in/akashkaintura)
-
-</div>
+- **Languages**: TypeScript, JavaScript, Python, SQL, HTML5, CSS3, Shell
+- **Frontend & Real-Time**: React, Next.js, TipTap, ProseMirror, Yjs (CRDTs), TailwindCSS, Vite
+- **Backend & Data**: Node.js, Express, PostgreSQL, Redis, AWS S3
+- **Tooling & Quality**: Vitest, Playwright, OxLint, Oxfmt, Turborepo, Git
